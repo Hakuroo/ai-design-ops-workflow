@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Industrial Construction Campaign</title>
+    <meta
+      name="description"
+      content="A responsive landing page hero section for an industrial construction campaign."
+    >
+    <link rel="stylesheet" href="landing-section.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Industrial Construction Campaign</p>
+          <h1 id="hero-title">Build with clarity before the first beam goes up.</h1>
+          <p class="hero__intro" id="hero-copy">
+            Planning-led construction support for teams that need safer timelines,
+            cleaner coordination, and confidence from concept to site delivery.
+          </p>
+          <div class="hero__actions">
+            <a class="hero__button" id="hero-cta" href="#qa-checklist">Plan the next phase</a>
+          </div>
+
+          <ul class="hero__features">
+            <li>Project planning aligned before site work begins</li>
+            <li>Clear coordination between field, design, and delivery teams</li>
+            <li>Practical reporting for safer decisions and smoother handoff</li>
+          </ul>
+        </div>
+
+        <aside class="workflow-panel" aria-labelledby="workflow-title">
+          <p class="workflow-panel__eyebrow">Design Ops Demo</p>
+          <h2 id="workflow-title">Campaign Review Controls</h2>
+
+          <div class="workflow-panel__section">
+            <h3>Copy Tone</h3>
+            <div class="tone-controls" role="group" aria-label="Copy tone options">
+              <button class="tone-button is-active" type="button" data-tone="professional" aria-pressed="true">
+                Professional
+              </button>
+              <button class="tone-button" type="button" data-tone="bold" aria-pressed="false">
+                Bold
+              </button>
+              <button class="tone-button" type="button" data-tone="direct" aria-pressed="false">
+                Direct
+              </button>
+            </div>
+          </div>
+
+          <div class="workflow-panel__section" id="qa-checklist">
+            <h3>QA Checklist</h3>
+            <div class="qa-list" aria-label="Quality assurance checklist">
+              <label>
+                <input type="checkbox" class="qa-item">
+                Responsive layout reviewed
+              </label>
+              <label>
+                <input type="checkbox" class="qa-item">
+                CTA is clear and visible
+              </label>
+              <label>
+                <input type="checkbox" class="qa-item">
+                Copy is aligned with the brief
+              </label>
+              <label>
+                <input type="checkbox" class="qa-item">
+                Links and buttons checked
+              </label>
+              <label>
+                <input type="checkbox" class="qa-item">
+                AI-generated output reviewed by a human
+              </label>
+            </div>
+          </div>
+
+          <div class="workflow-panel__section">
+            <h3>Delivery Summary</h3>
+            <button class="summary-button" id="generate-summary" type="button">
+              Generate delivery summary
+            </button>
+            <p class="delivery-summary" id="delivery-summary" role="status" aria-live="polite">
+              No delivery summary generated yet.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="landing-section.js"></script>
+  </body>
+</html>
